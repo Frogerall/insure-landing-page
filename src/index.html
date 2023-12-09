@@ -22,20 +22,43 @@
   <link rel="stylesheet" href="../dist/styles/output.css" />
  </head>
  <body>
-  <header class="flex items-center justify-between p-5">
+  <header class="relative z-50 flex items-center justify-between p-5">
    <img src="assets/images/logo.svg" alt="brand logo" width="112" height="18" />
    <img
     src="assets/images/icon-hamburger.svg"
     alt="navigation menu"
     width="32"
     height="32"
+    class="nav-btn md:hidden"
    />
-   <nav class="hidden">
-    <ul class="flex">
-     <li><a href="">How we work</a></li>
-     <li><a href="">Blog</a></li>
-     <li><a href=""> Account</a></li>
-     <li><a href="">View plans</a></li>
+   <img
+    src="assets/images/icon-close.svg"
+    alt="navigation menu"
+    width="32"
+    height="32"
+    class="nav-close hidden md:hidden"
+   />
+   <nav
+    class="nav-menu absolute inset-0 top-16 z-10 hidden h-screen flex-col items-center md:flex"
+   >
+    <ul
+     class="flex flex-col items-center gap-8 py-10 font-semibold text-white md:text-black"
+    >
+     <li><a href="">HOW WE WORK</a></li>
+     <li><a href="">BLOG</a></li>
+     <li><a href=""> ACCOUNT</a></li>
+     <li
+      class="mx-auto w-4/5 border-2 border-white px-6 py-2 text-center font-semibold md:border-gray-800 md:text-gray-800"
+     >
+      <a href="">VIEW PLANS</a>
+     </li>
+     <img
+      src="assets/images/bg-pattern-mobile-nav.svg"
+      alt="mobile nav wave pattern"
+      width="375"
+      height="218"
+      class="absolute bottom-0"
+     />
     </ul>
    </nav>
   </header>
@@ -206,11 +229,6 @@
    </ul>
   </footer>
 
-  <!-- <div class="attribution">
-   Challenge by
-   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-    >Frontend Mentor</a
-   >. Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <script src="scripts/script.js"></script>
  </body>
 </html>
