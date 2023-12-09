@@ -22,9 +22,14 @@
   <link rel="stylesheet" href="../dist/styles/output.css" />
  </head>
  <body>
-  <header class="flex w-4 text-center">
-   <img src="assets/images/logo.svg" alt="Brand Logo" width="112" height="18" />
-
+  <header class="flex items-center justify-between p-5">
+   <img src="assets/images/logo.svg" alt="brand logo" width="112" height="18" />
+   <img
+    src="assets/images/icon-hamburger.svg"
+    alt="navigation menu"
+    width="32"
+    height="32"
+   />
    <nav class="hidden">
     <ul class="flex">
      <li><a href="">How we work</a></li>
@@ -35,23 +40,138 @@
    </nav>
   </header>
 
-  Humanizing your insurance. Get your life insurance coverage easier and faster.
-  We blend our expertise and technology to help you find the plan that’s right
-  for you. Ensure you and your loved ones are protected. View plans We’re
-  different Snappy Process Our application process can be completed in minutes,
-  not hours. Don’t get stuck filling in tedious forms. Affordable Prices We
-  don’t want you worrying about high monthly costs. Our prices may be low, but
-  we still offer the best coverage possible. People First Our plans aren’t full
-  of conditions and clauses to prevent payouts. We make sure you’re covered when
-  you need it. Find out more about how we work How we work Our company How we
-  work Why Insure? View plans Reviews Help me FAQ Terms of use Privacy policy
-  Cookies Contact Sales Support Live chat Others Careers Press Licenses
+  <div class="hero-image">
+   <img
+    src="assets/images/image-intro-mobile.jpg"
+    alt="A family of four, The parents and their two children, a boy & girl."
+    width="375"
+    height="451"
+    class="sm:hidden"
+   />
+  </div>
 
-  <div class="attribution">
+  <section
+   class="intro relative flex flex-col items-center gap-5 px-5 py-24 text-center"
+  >
+   <img
+    src="assets/images/bg-pattern-intro-left-mobile.svg"
+    alt="left, curvy waves pattern"
+    width="168"
+    height="165"
+    class="absolute left-0 top-0"
+   />
+   <h1 class="z-0 text-5xl text-white">
+    Humanizing <br />
+    your insurance.
+   </h1>
+   <p class="mb-3 px-3 leading-relaxed text-gray-200">
+    Get your life insurance coverage easier and faster. We blend our expertise
+    and technology to help you find the plan that’s right for you. Ensure you
+    and your loved ones are protected.
+   </p>
+   <button class="w-1/2 border-2 border-white py-2 text-white">
+    View plans
+   </button>
+   <img
+    src="assets/images/bg-pattern-intro-right-mobile.svg"
+    alt="right, curvy waves pattern"
+    width="124"
+    height="330"
+    class="absolute -bottom-44 -right-1"
+   />
+  </section>
+
+  We’re different Snappy Process Our application process can be completed in
+  minutes, not hours. Don’t get stuck filling in tedious forms. Affordable
+  Prices We don’t want you worrying about high monthly costs. Our prices may be
+  low, but we still offer the best coverage possible. People First Our plans
+  aren’t full of conditions and clauses to prevent payouts. We make sure you’re
+  covered when you need it.
+
+  <div
+   class="banner relative mx-5 my-32 flex flex-col items-center gap-10 px-1 py-20"
+  >
+   <img
+    src="assets/images/bg-pattern-how-we-work-mobile.svg"
+    alt="banner, curvy patterns"
+    width="176"
+    height="317"
+    class="absolute right-0 top-0 h-full"
+   />
+   <h2 class="z-0 text-center text-4xl font-bold leading-10 text-white">
+    Find out more about how we work
+   </h2>
+   <button class="border-2 border-white px-5 py-2 text-white">
+    HOW WE WORK
+   </button>
+  </div>
+
+  <footer
+   class="relative mt-10 flex flex-col gap-5 bg-slate-50 pt-24 text-center"
+  >
+   <img
+    src="assets/images/bg-pattern-footer-mobile.svg"
+    alt="footer, curvy patterns"
+    width="374"
+    height="173"
+    class="absolute top-0"
+   />
+   <img
+    src="assets/images/logo.svg"
+    alt="brand logo"
+    width="112"
+    height="18"
+    class="z-0 mx-auto"
+   />
+   <ul class="z-0 m-2 flex justify-center gap-3">
+    <li>
+     <a href=""><img src="assets/images/icon-facebook.svg" alt="" /></a>
+    </li>
+    <li>
+     <a href=""><img src="assets/images/icon-twitter.svg" alt="" /></a>
+    </li>
+    <li>
+     <a href=""><img src="assets/images/icon-pinterest.svg" alt="" /></a>
+    </li>
+    <li>
+     <a href=""><img src="assets/images/icon-instagram.svg" alt="" /></a>
+    </li>
+   </ul>
+
+   <hr class="mx-auto w-4/5" />
+   <ul>
+    <li class="mb-5 text-gray-400"><a href="">OUR COMPANY</a></li>
+    <li class="font-semibold"><a href="">HOW WE WORK</a></li>
+    <li class="font-semibold"><a href="">WHY INSURE?</a></li>
+    <li class="font-semibold"><a href="">CHECK PRICE</a></li>
+    <li class="font-semibold"><a href="">REVIEWS</a></li>
+   </ul>
+   <ul>
+    <li class="mb-5 text-gray-400"><a href="">HELP ME</a></li>
+    <li class="font-semibold"><a href="">FAQ</a></li>
+    <li class="font-semibold"><a href="">TERMS OF USE</a></li>
+    <li class="font-semibold"><a href="">PRIVACY POLICY</a></li>
+    <li class="font-semibold"><a href="">COOKIES</a></li>
+   </ul>
+   <ul>
+    <li class="mb-5 text-gray-400"><a href="">CONTACT</a></li>
+    <li class="font-semibold"><a href="">SALES</a></li>
+    <li class="font-semibold"><a href="">SUPPORT</a></li>
+    <li class="font-semibold"><a href="">LIVE CHAT</a></li>
+   </ul>
+   <ul class="mb-20">
+    <li class="mb-5 text-gray-400"><a href="">OTHERS</a></li>
+    <li class="font-semibold"><a href="">CAREERS</a></li>
+    <li class="font-semibold"><a href="">PRESS</a></li>
+    <li class="font-semibold"><a href="">LICENCES</a></li>
+   </ul>
+  </footer>
+
+  <!-- <div class="attribution">
    Challenge by
    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
     >Frontend Mentor</a
    >. Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
  </body>
 </html>
