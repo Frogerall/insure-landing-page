@@ -3,6 +3,12 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+   rel="stylesheet"
+  />
   <link
    rel="icon"
    type="image/png"
@@ -47,18 +53,18 @@
      class="flex flex-col items-center gap-8 py-10 font-semibold text-white md:flex-1 md:flex-row md:justify-end md:gap-8 md:p-0 md:text-black"
     >
      <li class="w-fit text-white opacity-90 md:text-gray-500">
-      <a href="">HOW WE WORK</a>
+      <a href="" class="hover:text-black hover:no-underline">HOW WE WORK</a>
      </li>
      <li class="w-fit text-white opacity-90 md:text-gray-500">
-      <a href="">BLOG</a>
+      <a href="" class="hover:text-black hover:no-underline">BLOG</a>
      </li>
      <li class="w-fit text-white opacity-90 md:text-gray-500">
-      <a href=""> ACCOUNT</a>
+      <a href="" class="hover:text-black hover:no-underline"> ACCOUNT</a>
      </li>
      <li
-      class="mx-auto w-4/5 border-2 border-white px-6 py-2 text-center font-semibold md:m-0 md:w-fit md:border-gray-800 md:text-gray-800"
+      class="mx-auto w-4/5 border-2 border-white px-6 py-2 text-center font-semibold hover:bg-black hover:text-white md:m-0 md:w-fit md:border-gray-800 md:text-gray-800"
      >
-      <a href="">VIEW PLANS</a>
+      <a href="" class="hover:no-underline">VIEW PLANS</a>
      </li>
      <img
       src="assets/images/bg-pattern-mobile-nav.svg"
@@ -101,17 +107,19 @@
    <div class="hero-content relative md:w-5/6">
     <div class="max-w-prose flex-col gap-5 md:flex md:ps-32 md:text-start">
      <div class="hidden md:block md:h-0.5 md:w-40 md:bg-slate-200"></div>
-     <h1 class="z-0 text-5xl text-white md:text-6xl">
+     <h1 class="font-display z-0 text-5xl text-white md:text-6xl">
       Humanizing <br />
       your insurance.
      </h1>
-     <p class="mb-3 px-3 leading-relaxed text-gray-200">
+     <p class="font-body mb-3 px-3 leading-relaxed text-gray-200">
       Get your life insurance coverage easier and faster. We blend our expertise
       and technology to help you find the plan that’s right for you. Ensure you
       and your loved ones are protected.
      </p>
-     <button class="w-1/2 border border-white py-2 text-white md:w-40">
-      View plans
+     <button
+      class="w-1/2 border border-white py-2 font-semibold text-white hover:bg-white hover:text-blue-950 md:w-40"
+     >
+      VIEW PLANS
      </button>
     </div>
     <img
@@ -143,7 +151,11 @@
   >
    <div class="title pt-10">
     <div class="mx-auto mb-6 h-0.5 w-2/4 bg-slate-200 md:mx-0"></div>
-    <h2 class="text-center text-4xl font-semibold">We’re different</h2>
+    <h2
+     class="font-display text-center text-4xl font-semibold md:mb-12 md:text-6xl"
+    >
+     We’re different
+    </h2>
    </div>
    <div
     class="about-info flex flex-col gap-8 md:flex-row md:items-start md:gap-8"
@@ -157,7 +169,7 @@
       width="86"
       height="86"
      />
-     <h3 class="mb-3 mt-7 text-2xl font-bold">Snappy Process</h3>
+     <h3 class="font-display mb-3 mt-7 text-2xl font-bold">Snappy Process</h3>
      <p>
       Our application process can be completed in minutes, not hours. Don’t get
       stuck filling in tedious forms.
@@ -172,7 +184,9 @@
       width="86"
       height="86"
      />
-     <h3 class="mb-4 mt-7 text-2xl font-bold">Affordable Prices</h3>
+     <h3 class="font-display mb-4 mt-7 text-2xl font-bold">
+      Affordable Prices
+     </h3>
      <p>
       We don’t want you worrying about high monthly costs. Our prices may be
       low, but we still offer the best coverage possible.
@@ -187,7 +201,7 @@
       width="86"
       height="86"
      />
-     <h3 class="mb-4 mt-7 text-2xl font-bold">People First</h3>
+     <h3 class="font-display mb-4 mt-7 text-2xl font-bold">People First</h3>
      <p>
       Our plans aren’t full of conditions and clauses to prevent payouts. We
       make sure you’re covered when you need it.
@@ -214,12 +228,14 @@
     class="absolute right-0 top-0 hidden md:block"
    />
    <h2
-    class="z-0 text-center text-4xl font-bold leading-10 text-white md:text-start md:text-5xl"
+    class="font-display z-0 text-center text-4xl font-bold leading-10 text-white md:text-start md:text-5xl"
    >
     Find out more <br class="hidden md:block" />
     about how we work
    </h2>
-   <button class="border-2 border-white px-5 py-2 text-white">
+   <button
+    class="active:op z-0 border-2 border-white px-5 py-2 font-semibold text-white hover:bg-white hover:text-blue-950"
+   >
     HOW WE WORK
    </button>
   </div>
@@ -252,16 +268,18 @@
      class="z-0 mx-auto md:mx-0"
     />
     <ul class="z-0 m-2 flex justify-center gap-3">
-     <li>
-      <a href=""><img src="assets/images/icon-facebook.svg" alt="" /></a>
+     <li class="hover:opacity-70">
+      <a href=""
+       ><img src="assets/images/icon-facebook.svg" class="hover:filter" alt=""
+      /></a>
      </li>
-     <li>
+     <li class="hover:opacity-70">
       <a href=""><img src="assets/images/icon-twitter.svg" alt="" /></a>
      </li>
-     <li>
+     <li class="hover:opacity-70">
       <a href=""><img src="assets/images/icon-pinterest.svg" alt="" /></a>
      </li>
-     <li>
+     <li class="hover:opacity-70">
       <a href=""><img src="assets/images/icon-instagram.svg" alt="" /></a>
      </li>
     </ul>

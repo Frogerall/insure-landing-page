@@ -9,3 +9,13 @@
 .nav-menu {
  background-color: hsl(270, 9%, 17%);
 }
+p,
+a {
+ font-family: 'Karla';
+}
+a {
+ letter-spacing: 1.5px;
+}
+a:hover {
+ text-decoration: underline solid 2px;
+}
