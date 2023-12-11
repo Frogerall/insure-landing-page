@@ -71,19 +71,19 @@
       alt="mobile nav wave pattern"
       width="375"
       height="218"
-      class="absolute bottom-0 md:hidden"
+      class="absolute bottom-0 right-0 w-full md:hidden"
      />
     </ul>
    </nav>
   </header>
 
-  <div class="hero-image">
+  <div class="hero-image flex items-center justify-center">
    <img
     src="assets/images/image-intro-mobile.jpg"
     alt="A family of four, The parents and their two children, a boy & girl."
     width="375"
     height="451"
-    class="sm:hidden"
+    class="w-full md:hidden"
    />
   </div>
 
@@ -105,19 +105,21 @@
     class="hidden md:absolute md:-left-1 md:top-96 md:block md:h-full"
    />
    <div class="hero-content relative md:w-5/6">
-    <div class="max-w-prose flex-col gap-5 md:flex md:ps-32 md:text-start">
+    <div
+     class="flex flex-col items-center gap-5 md:max-w-sm md:items-start md:ps-5 md:text-start lg:max-w-prose lg:ps-32"
+    >
      <div class="hidden md:block md:h-0.5 md:w-40 md:bg-slate-200"></div>
-     <h1 class="font-display z-0 text-5xl text-white md:text-6xl">
+     <h1 class="font-display z-0 text-5xl text-white md:text-5xl lg:text-6xl">
       Humanizing <br />
       your insurance.
      </h1>
-     <p class="font-body mb-3 px-3 leading-relaxed text-gray-200">
+     <p class="font-body mb-3 max-w-prose px-3 leading-relaxed text-gray-200">
       Get your life insurance coverage easier and faster. We blend our expertise
       and technology to help you find the plan that’s right for you. Ensure you
       and your loved ones are protected.
      </p>
      <button
-      class="w-1/2 border border-white py-2 font-semibold text-white hover:bg-white hover:text-blue-950 md:w-40"
+      class="w-1/2 border border-white py-2 font-semibold text-white hover:bg-white hover:text-blue-950 md:w-40 md:self-start"
      >
       VIEW PLANS
      </button>
@@ -127,7 +129,7 @@
      alt="A family of four, The parents and their two children, a boy & girl."
      width="540"
      height="650"
-     class="-right-24 -top-16 hidden md:absolute md:block"
+     class="-top-16 hidden md:absolute md:-right-28 md:block md:w-1/2 lg:-right-24 lg:w-fit"
     />
    </div>
    <img
@@ -244,7 +246,7 @@
    class="relative mt-10 flex flex-col gap-5 bg-slate-50 pt-24 text-center"
   >
    <div
-    class="footer-header justify-between md:mx-auto md:flex md:w-5/6 md:items-center"
+    class="footer-header flex flex-col justify-between gap-3 md:mx-auto md:w-5/6 md:flex-row md:items-center md:gap-0"
    >
     <img
      src="assets/images/bg-pattern-footer-mobile.svg"
